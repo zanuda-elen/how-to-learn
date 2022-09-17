@@ -86,3 +86,32 @@ div {
   right: 0;
   bottom: 0;
 }
+.description {
+  top: 100px;
+}
+.two-columns {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  top: 100px;
+  bottom: 100px;
+  width: 80%;
+}
+.two-columns__brief {
+  flex-direction: row;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  width: 175px;
+}
+.two-columns__main-text {
+  min-width: 784px;
+  flex-direction: column-reverse;
+  margin: 0;
+}
+.two-columns__paragraph {
+  margin: 0;
+  top: 0;
+  bottom: 30px;
+}
