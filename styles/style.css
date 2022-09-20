@@ -8,9 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-.centered-block {
-  margin: auto;
-}
+
 .header {
   position: relative;
   display: flex;
@@ -33,7 +31,6 @@
   right: 0;
   background-color: #2f80ed;
 }
-
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -75,17 +72,20 @@
 }
 .header_link {
   position: absolute;
+  color: #2f80ed;
+  text-decoration: none;
 }
-.flex-row {
-  display: flex;
-  justify-content: space-between;
-}
+
 .header__main-illustration {
   position: absolute;
   width: 765px;
   height: 608px;
   right: 0;
   bottom: 0;
+}
+.description {
+  display: flex;
+  justify-content: center;
 }
 .description_border-bottom {
   margin-bottom: 100px;
@@ -95,22 +95,20 @@
   justify-content: space-between;
   width: 80%;
   align-items: center;
-  padding: 0;
-  min-height: 400px;
 }
 .two-columns_brief {
-  align-self: flex-start;
-  margin: 0;
-  top: 0;
+  display: flex;
+  align-self: start;
   width: 175px;
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
 }
 .two-columns_main-text {
-  margin: 0;
   min-width: 784px;
+  width: 80%;
 }
 .two-columns_paragraph {
   margin: 0;
