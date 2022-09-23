@@ -15,28 +15,19 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  padding-bottom: 100px;
-  box-sizing: border-box;
   /* выше установили ограничения для секции */
-}
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  top: 64px;
-  position: absolute;
-  right: 0;
-  background-color: #2f80ed;
 }
 .logo {
   width: 228px;
   height: 32px;
 }
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
+  background-repeat: no-repeat;
   position: absolute;
-  align-self: center;
-  z-index: 1;
   left: 64px;
   top: 30px;
+  z-index: 1;
 }
 .header__title {
   display: flex;
@@ -49,23 +40,29 @@
   font-weight: 600;
   z-index: 1;
 }
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+  margin: 0;
+}
 .header__subtitle {
   position: absolute;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  width: 388px;
+  max-width: 388px;
   left: 64px;
   bottom: 30px;
-  z-index: 1;
   margin: 0;
+  z-index: 1;
 }
-.header__link {
+.header__square-pic {
   position: absolute;
-  color: #2f80ed;
-  text-decoration: none;
-  z-index: 1;
-  margin: 0;
+  height: 568px;
+  width: 568px;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
 }
 .header__main-illustration {
   position: absolute;
@@ -73,6 +70,7 @@
   height: 608px;
   right: 0;
   bottom: 0;
+  object-fit: cover;
 }
 .description {
   display: flex;
@@ -125,7 +123,7 @@
 .table {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-self: center;
   width: 1100px;
   padding: 0;
@@ -140,7 +138,6 @@
   width: 60%;
   margin: 0;
   padding-bottom: 20px;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -164,7 +161,6 @@
   font-size: 24px;
   font-weight: 600;
   padding-bottom: 20px;
-  box-sizing: border-box;
 }
 .table__text {
   margin: 0;
@@ -172,7 +168,6 @@
   font-size: 18px;
   font-weight: normal;
   padding-bottom: 20px;
-  box-sizing: border-box;
 }
 .table__text:last-child {
   padding-bottom: 0;
@@ -200,6 +195,7 @@
 }
 .feynman__subtitle {
   margin: 0;
+  padding-top: 70px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -217,7 +213,7 @@
 }
 .kaufman {
   position: relative;
-  background-color: #1f1f11;
+  background-color: #1f1f1f;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -253,7 +249,7 @@
   justify-content: center;
   padding: 60px 0 40px 0;
   box-sizing: border-box;
-  background: #1f1f11;
+  background: #1f1f1f;
   min-height: 350px;
 }
 .footer__column {
@@ -265,7 +261,7 @@
 .footer__columns {
   display: flex;
   width: 90%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer__column_content_copyright {
   flex-basis: 711px;
@@ -285,7 +281,6 @@
   justify-content: flex-start;
 }
 .footer__author {
-  bottom: 0;
   margin: 18px 0;
   color: white;
   line-height: 25px;
@@ -299,7 +294,7 @@
   font-size: 18px;
   font-weight: 600;
 }
-.footer__column-link {
+.footer__column-links {
   list-style-type: none;
   padding: 0;
   margin: 0 0 16px 0;
@@ -313,7 +308,7 @@
   height: 16px;
   margin-right: 10px;
 }
-.footer__column-links {
+.footer__column-link {
  color: white;
  text-decoration: none;
  margin: 0;
