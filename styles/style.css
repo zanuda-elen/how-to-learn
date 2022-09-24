@@ -44,6 +44,10 @@
   color: #2f80ed;
   text-decoration: none;
   margin: 0;
+  opacity: 0.5;
+}
+.header__link:hover {
+  opacity: 1;
 }
 .header__subtitle {
   position: absolute;
@@ -210,6 +214,10 @@
   font-weight: normal;
   right: 48px;
   top: 50%;
+  opacity: 0.5;
+}
+.feynman__link:hover {
+  opacity: 1;
 }
 .kaufman {
   position: relative;
@@ -303,7 +311,7 @@
   font-size: 18px;
   font-weight: normal;
 }
-.social-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
