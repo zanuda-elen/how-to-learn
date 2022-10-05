@@ -391,6 +391,20 @@
   top: 0;
   background-size: contain;
   background-repeat: no-repeat;
+  animation: rotation 20s linear infinite;
+}
+.resources {
+  display: flex;
+  flex-direction: column;
+
+}
+.resources__logo-zone {
+ width: 1100px;
+ margin: 80px auto 217px;
+}
+.resources_logo {
+  width: 270px;
+  height: 38px;
 }
 .table__cell_theme_dark {
   width: 200px;
